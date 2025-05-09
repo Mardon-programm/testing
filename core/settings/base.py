@@ -38,6 +38,7 @@ DJANGO_APPS = [
 
 MY_APPS = [
     # приложения
+    'app.users',
 
 ]
 
@@ -59,7 +60,7 @@ LANGUAGES = [
 
 
 
-TRANSLATABLE_MODEL_MODULES = ['app.base.models']
+TRANSLATABLE_MODEL_MODULES = ['app.base'] #.models
 
 
 LOCALE_PATHS = [
@@ -156,7 +157,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CORS_ALLOW_ALL_ORIGINS = True
 
 JAZZMIN_SETTINGS=JAZZMIN_SETTINGS
-AUTH_USER_MODEL = "auth.User"
+AUTH_USER_MODEL = "users.User"
 
 CKEDITOR_5_CONFIGS = {
     'default': {
